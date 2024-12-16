@@ -6,6 +6,10 @@ require("dotenv").config();
 // Middleware
 app.use(cors());
 app.use(express.json());
+// Root route
+app.get("/", (req, res) => {
+  res.send("Welcome to the backend!");
+});
 
 // Static folder to serve images
 app.use("/captureSites", express.static("captureSites"));
