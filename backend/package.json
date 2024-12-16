@@ -1,9 +1,11 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Backend server for the application",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",   // Production start script
+    "dev": "nodemon server.js",  // Development start script
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
